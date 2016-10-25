@@ -1,5 +1,4 @@
 In the folder there are 6 packages where you can find theirs classes:
-	
 	- adapter: DateAdapter class;
 	- dao: PeopleStore class;
 	- model: HealthProfile and Person classes;
@@ -13,7 +12,6 @@ In the folder there are 6 packages where you can find theirs classes:
 		 - CustomValidationEventHandler class and it use to validate event in JAXBUnMarshallerXML class.
 
 There also are 4 files:
-	
 	- people.xml: is the database.
 	- people.xsd: is the XML Schema for the XML file of people.
 	- build.xml: is the ANT build script that compiling source code, running tests, generating documentation directly 			from the command line. In the ivy folder the compile target will generate and download ivy.jar. 		      Libraries, specified in ivy.xml, will be downloaded and save into lib folder. The generate target will 			   also created the folder people.generated that, using JAXB XJC, there will generate the classes we 			      already explain.
