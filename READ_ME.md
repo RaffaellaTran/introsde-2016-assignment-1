@@ -281,16 +281,25 @@ Output:
 **Un-Marshalling from XML using model classes**
 Output from XML File: 
 
-- Person with id 4227is Maria Rossi born on the 19-09-1971. The last update was on the 27-05-1966 ,Maria has an weight of 93.62 and height of 93.62 and the bmi is:26.49.
-- Person with id 6183is Marco Cosa born on the 02-10-2015. The last update was on the 04-10-1963 ,Marco has an weight of 116.66 and height of 116.66 and the bmi is:30.68.
-- Person with id 9483is Giovanni Bianchi born on the 20-06-2010. The last update was on the 26-10-1954 ,Giovanni has an weight of 71.29 and height of 71.29 and the bmi is:28.56.
-- Person with id 5063is Laura Valentini born on the 27-02-1951. The last update was on the 06-11-2014 ,Laura has an weight of 108.99 and height of 108.99 and the bmi is:39.55.
-- Person with id 6791is Anna Pucci born on the 18-09-2015. The last update was on the 13-04-1973 ,Anna has an weight of 52.41 and height of 52.41 and the bmi is:9.25.
-- Person with id 3873is Nicola Dondo born on the 03-02-1964. The last update was on the 28-10-1966 ,Nicola has an weight of 87.53 and height of 87.53 and the bmi is:12.75.
-- Person with id 7951is Giulio Simba born on the 10-11-1969. The last update was on the 10-07-2008 ,Giulio has an weight of 55.94 and height of 55.94 and the bmi is:8.81.
-- Person with id 2883is Valeria Marini born on the 11-08-2011. The last update was on the 10-09-1985 ,Valeria has an weight of 51.82 and height of 51.82 and the bmi is:10.33.
-- Person with id 8586is Chiara Verno born on the 04-09-1987. The last update was on the 09-01-1952 ,Chiara has an weight of 133.31 and height of 133.31 and the bmi is:23.14.
-- Person with id 2394is Andrea Pello born on the 09-06-2004. The last update was on the 03-04-2012 ,Andrea has an weight of 76.07 and height of 76.07 and the bmi is:15.16.
+ Person with id 4227is Maria Rossi born on the 19-09-1971. The last update was on the 27-05-1966 ,Maria has an weight of 93.62 and height of 93.62 and the bmi is:26.49.
+
+Person with id 6183is Marco Cosa born on the 02-10-2015. The last update was on the 04-10-1963 ,Marco has an weight of 116.66 and height of 116.66 and the bmi is:30.68.
+
+Person with id 9483is Giovanni Bianchi born on the 20-06-2010. The last update was on the 26-10-1954 ,Giovanni has an weight of 71.29 and height of 71.29 and the bmi is:28.56.
+
+Person with id 5063is Laura Valentini born on the 27-02-1951. The last update was on the 06-11-2014 ,Laura has an weight of 108.99 and height of 108.99 and the bmi is:39.55.
+
+Person with id 6791is Anna Pucci born on the 18-09-2015. The last update was on the 13-04-1973 ,Anna has an weight of 52.41 and height of 52.41 and the bmi is:9.25.
+
+Person with id 3873is Nicola Dondo born on the 03-02-1964. The last update was on the 28-10-1966 ,Nicola has an weight of 87.53 and height of 87.53 and the bmi is:12.75.
+
+Person with id 7951is Giulio Simba born on the 10-11-1969. The last update was on the 10-07-2008 ,Giulio has an weight of 55.94 and height of 55.94 and the bmi is:8.81.
+
+Person with id 2883is Valeria Marini born on the 11-08-2011. The last update was on the 10-09-1985 ,Valeria has an weight of 51.82 and height of 51.82 and the bmi is:10.33.
+
+Person with id 8586is Chiara Verno born on the 04-09-1987. The last update was on the 09-01-1952 ,Chiara has an weight of 133.31 and height of 133.31 and the bmi is:23.14.
+
+Person with id 2394is Andrea Pello born on the 09-06-2004. The last update was on the 03-04-2012 ,Andrea has an weight of 76.07 and height of 76.07 and the bmi is:15.16.
 
 Another way to do marshall java objects to XM is using JAXB and generated class with JAXB XJC. This class will produce a people_new_xjc.xml in home folder.
 
