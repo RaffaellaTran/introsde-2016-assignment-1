@@ -163,7 +163,7 @@ Using java invocating inizializedDB function i created 10 people. The JABXAnnota
 
 File peopleNew.xml created in the home folder.....
 Output: 
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 	<people>
     <person id="4227">
