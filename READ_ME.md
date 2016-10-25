@@ -1,23 +1,23 @@
 In the folder there are 6 packages where you can find theirs classes:
 	
-	- adapter: DateAdapter class;
-	- dao: PeopleStore class;
-	- model: HealthProfile and Person classes;
-	- people: JAXBMarshallerXML and JAXBUnMarshallerXML classes;
-	- people.generated: the classes generated with JAXB XJC. At the beginning we don't have, it will be generated, for that reason when you start you see some missing imports;
-	- src: 
-	   - HealthProfileReader: will run the requests based on Laboratory 3; 
-	   - JAXBAnnotationsXml: will marshall (to XML) and unmarshall (from XML).This class will create a file named peopleNew.xml with 10 people in the home folder. Then you can read people_new.xml file and print one by one.
-	   - JAXBMarshallerJson: will marshall (to JSON). It will generate and print a peopleNew.json in the home folder.
-	- utils: - RandomNumberHelper class has the methods to create random interger / double numbers in the range (min,max]
-		 - CustomValidationEventHandler class and it use to validate event in JAXBUnMarshallerXML class.
+- adapter: DateAdapter class;
+- dao: PeopleStore class;
+- model: HealthProfile and Person classes;
+- people: JAXBMarshallerXML and JAXBUnMarshallerXML classes;
+- people.generated: the classes generated with JAXB XJC. At the beginning we don't have, it will be generated, for that reason when you start you see some missing imports;
+- src: 
+ - HealthProfileReader: will run the requests based on Laboratory 3; 
+ - JAXBAnnotationsXml: will marshall (to XML) and unmarshall (from XML).This class will create a file named peopleNew.xml with 10 people in the home folder. Then you can read people_new.xml file and print one by one.
+  - JAXBMarshallerJson: will marshall (to JSON). It will generate and print a peopleNew.json in the home folder.
+- utils: - RandomNumberHelper class has the methods to create random interger / double numbers in the range (min,max]
+ - CustomValidationEventHandler class and it use to validate event in JAXBUnMarshallerXML class.
 
 There also are 4 files:
 	
-	- people.xml: is the database.
-	- people.xsd: is the XML Schema for the XML file of people.
-	- build.xml: is the ANT build script that compiling source code, running tests, generating documentation directly 			from the command line. In the ivy folder the compile target will generate and download ivy.jar. 		      Libraries, specified in ivy.xml, will be downloaded and save into lib folder. The generate target will 			   also created the folder people.generated that, using JAXB XJC, there will generate the classes we 			      already explain.
-	- ivy.xml: is used to specify the dependencies as JAXB API and XJC compiler.
+- people.xml: is the database.
+- people.xsd: is the XML Schema for the XML file of people.
+- build.xml: is the ANT build script that compiling source code, running tests, generating documentation directly from the command line. In the ivy folder the compile target will generate and download ivy.jar. Libraries, specified in ivy.xml, will be downloaded and save into lib folder. The generate target will also created the folder people.generated that, using JAXB XJC, there will generate the classes we already explain.
+- ivy.xml: is used to specify the dependencies as JAXB API and XJC compiler.
 
 ## Request based on Lab 3
 
@@ -575,17 +575,17 @@ First of all, take a look to the build.xml of the project and from the command l
 
 From here, you can run this others requests:
 
-[ant compile] : execute the targets "init" and "generate";
-[ant execute.printAllPeople] : run instruction 2 based on Lab 3;
-[ant execute.HProfileByIDPerson] : run instruction 3 based on Lab 3;
-[ant execute.printPeopleByCondition] : run instruction 4 based on Lab 3;
-[ant execute.MarshallerAndUnmarshallerXML] : run instruction 2 based on Lab 4;
-[ant execute.MarshallerJSON] : run instruction 3 based on Lab 4;
+- [ant compile] : execute the targets "init" and "generate";
+- [ant execute.printAllPeople] : run instruction 2 based on Lab 3;
+- [ant execute.HProfileByIDPerson] : run instruction 3 based on Lab 3;
+- [ant execute.printPeopleByCondition] : run instruction 4 based on Lab 3;
+- [ant execute.MarshallerAndUnmarshallerXML] : run instruction 2 based on Lab 4;
+- [ant execute.MarshallerJSON] : run instruction 3 based on Lab 4;
 
 If you want marshall and unmarshall using classes generated with JAXB XJC. You wil execute the commands:
 
-[ant execute.JAXBMarshaller] : run instruction 2 based on Lab 4;
-[ant execute.JAXBUnMarshaller] : run instruction 2 based on Lab 4.
+- [ant execute.JAXBMarshaller] : run instruction 2 based on Lab 4;
+- [ant execute.JAXBUnMarshaller] : run instruction 2 based on Lab 4.
 
 
 
