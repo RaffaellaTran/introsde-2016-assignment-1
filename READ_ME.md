@@ -109,7 +109,7 @@ Using the condition weight>90 (args[0]="printPeopleByCondition" ,args[1]=90, arg
 
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
 	<!-- definition of root element -->
 	<xsd:element name="people" type="peopleType" />
@@ -165,7 +165,7 @@ File peopleNew.xml created in the home folder.....
 Output: 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<people>
+	<people>
     <person id="4227">
         <firstname>Maria</firstname>
         <lastname>Rossi</lastname>
@@ -305,8 +305,8 @@ Another way to do marshall java objects to XM is using JAXB and generated class 
 
 **Marshalling to XML using generated class with JAXB XJC**
 
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<people>
+	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<people>
     <person id="1">
         <firstname>Maria</firstname>
         <lastname>Rossi</lastname>
@@ -450,10 +450,11 @@ I created 10 people using java and marshall them to JSON. This function will pri
 
 ------------------ Marshalling to JSON ----------------
 
-- File peopleNew.json created in the home folder.....
-- Output: 
-- {
-  "person" : [ {
+ File peopleNew.json created in the home folder.....
+Output: 
+
+	{
+  	"person" : [ {
     "firstname" : "Maria",
     "lastname" : "Rossi",
     "birthdate" : "17-05-1966",
@@ -464,7 +465,7 @@ I created 10 people using java and marshall them to JSON. This function will pri
       "bmi" : 19.72
     },
     "id" : 5551
-  }, {
+  	}, {
     "firstname" : "Marco",
     "lastname" : "Cosa",
     "birthdate" : "18-02-1953",
@@ -475,7 +476,7 @@ I created 10 people using java and marshall them to JSON. This function will pri
       "bmi" : 26.55
     },
     "id" : 8372
-  }, {
+  	}, {
     "firstname" : "Giovanni",
     "lastname" : "Bianchi",
     "birthdate" : "18-11-2014",
@@ -486,7 +487,7 @@ I created 10 people using java and marshall them to JSON. This function will pri
       "bmi" : 12.89
     },
     "id" : 8685
-  }, {
+  	}, {
     "firstname" : "Laura",
     "lastname" : "Valentini",
     "birthdate" : "06-09-1961",
@@ -497,7 +498,7 @@ I created 10 people using java and marshall them to JSON. This function will pri
       "bmi" : 8.62
     },
     "id" : 8112
-  }, {
+  	}, {
     "firstname" : "Anna",
     "lastname" : "Pucci",
     "birthdate" : "25-03-1988",
@@ -508,7 +509,7 @@ I created 10 people using java and marshall them to JSON. This function will pri
       "bmi" : 16.19
     },
     "id" : 3076
-  }, {
+ 	 }, {
     "firstname" : "Nicola",
     "lastname" : "Dondo",
     "birthdate" : "24-04-1975",
@@ -519,7 +520,7 @@ I created 10 people using java and marshall them to JSON. This function will pri
       "bmi" : 27.92
     },
     "id" : 2568
-  }, {
+  	}, {
     "firstname" : "Giulio",
     "lastname" : "Simba",
     "birthdate" : "09-07-1983",
@@ -530,7 +531,7 @@ I created 10 people using java and marshall them to JSON. This function will pri
       "bmi" : 14.5
     },
     "id" : 1492
-  }, {
+  	}, {
     "firstname" : "Valeria",
     "lastname" : "Marini",
     "birthdate" : "22-02-1989",
@@ -541,7 +542,7 @@ I created 10 people using java and marshall them to JSON. This function will pri
       "bmi" : 64.65
     },
     "id" : 9675
-  }, {
+  	}, {
     "firstname" : "Chiara",
     "lastname" : "Verno",
     "birthdate" : "04-11-1961",
@@ -552,7 +553,7 @@ I created 10 people using java and marshall them to JSON. This function will pri
       "bmi" : 12.25
     },
     "id" : 5679
-  }, {
+ 	 }, {
     "firstname" : "Andrea",
     "lastname" : "Pello",
     "birthdate" : "11-10-1964",
@@ -563,8 +564,8 @@ I created 10 people using java and marshall them to JSON. This function will pri
       "bmi" : 21.35
     },
     "id" : 9802
-  } ]
-}
+ 	 } ]
+	}
 
 **How to run it**
 
