@@ -1,20 +1,22 @@
 In the folder there are 6 packages where you can find theirs classes:
+	
 	- adapter: DateAdapter class;
 	- dao: PeopleStore class;
 	- model: HealthProfile and Person classes;
 	- people: JAXBMarshallerXML and JAXBUnMarshallerXML classes;
-	- people.generated: the classes generated with JAXB XJC. At the beginning we don't have, it will be generated, for that reason when you start you see some missing imports;
+	- people.generated: the classes generated with JAXB XJC. At the beginning we don't have, it will be generated, for 		    that reason when you start you see some missing imports;
 	- src: 
 	   - HealthProfileReader: will run the requests based on Laboratory 3; 
-	   - JAXBAnnotationsXml: will marshall (to XML) and unmarshall (from XML).This class will create a file named peopleNew.xml with 10 people in the home folder. Then you can read people_new.xml 					file and print one by one.
+	   - JAXBAnnotationsXml: will marshall (to XML) and unmarshall (from XML).This class will create a file named 					peopleNew.xml with 10 people in the home folder. Then you can read people_new.xml 					file and print one by one.
 	   - JAXBMarshallerJson: will marshall (to JSON). It will generate and print a peopleNew.json in the home folder.
-	- utils: - RandomNumberHelper class has the methods to create random interger / double numbers in the range (min,max]
+	- utils: - RandomNumberHelper class has the methods to create random interger / double numbers in the range 			   (min,max]
 		 - CustomValidationEventHandler class and it use to validate event in JAXBUnMarshallerXML class.
 
 There also are 4 files:
+	
 	- people.xml: is the database.
 	- people.xsd: is the XML Schema for the XML file of people.
-	- build.xml: is the ANT build script that compiling source code, running tests, generating documentation directly from the command line. In the ivy folder the compile target will generate and 		     download ivy.jar. Libraries, specified in ivy.xml, will be downloaded and save into lib folder. The generate target will also created the folder people.generated that, using JAXB 		     XJC, there will generate the classes we already explain.
+	- build.xml: is the ANT build script that compiling source code, running tests, generating documentation directly 			from the command line. In the ivy folder the compile target will generate and download ivy.jar. 		      Libraries, specified in ivy.xml, will be downloaded and save into lib folder. The generate target will 			   also created the folder people.generated that, using JAXB XJC, there will generate the classes we 			      already explain.
 	- ivy.xml: is used to specify the dependencies as JAXB API and XJC compiler.
 
 ## Request based on Lab 3
@@ -23,13 +25,14 @@ There also are 4 files:
 
 This functions will be used for print the details of all the people or by given the personID it will show his person's healthprofile.
 The functions are:
+	
 	- getWeight: returns weight of a given personID.
 	- getHeight: returns height of a given personID.
 
 ## Request 2: Make a function that prints all people in the list with details. (args[0]="printAllPeople")
 
 The interateNode function is used to print the personal details.
-
+	
 	public void iterateNode(Node node, Long personID) throws XPathExpressionException {
 	
 		NodeList nodeList = node.getChildNodes();
@@ -54,6 +57,7 @@ The interateNode function is used to print the personal details.
 ## Request 3: A function that accepts id as parameter and prints the HealthProfile of the person with id=5
 
 By given personID as a parameter (args[0]= "getHProfileByIDPerson" ,args[1]=5) the getHProfileByIDPerson function will print the HealthProfile detail of that personID.
+
 This is the output of the function:
 
     /people/person[@id=5]/healthprofile
@@ -154,6 +158,7 @@ Using the condition weight>90 (args[0]="printPeopleByCondition" ,args[1]=90, arg
 ## Request 2: Write a java application that does the marshalling and un-marshalling using classes generated with JAXB XJC
 
 Using java invocating inizializedDB function i created 10 people. The JABXAnnotationsXML class will do marshall java objects to XML and will produce a peopleNew.xml in home folder. This class also will read the xml file created and print one at a time.
+
 **Marshalling to XML using model classes**
 
 File peopleNew.xml created in the home folder.....
@@ -275,15 +280,25 @@ Output:
 
 **Un-Marshalling from XML using model classes**
 Output from XML File: 
+
 Person with id 4227is Maria Rossi born on the 19-09-1971. The last update was on the 27-05-1966 ,Maria has an weight of 93.62 and height of 93.62 and the bmi is:26.49.
+
 Person with id 6183is Marco Cosa born on the 02-10-2015. The last update was on the 04-10-1963 ,Marco has an weight of 116.66 and height of 116.66 and the bmi is:30.68.
+
 Person with id 9483is Giovanni Bianchi born on the 20-06-2010. The last update was on the 26-10-1954 ,Giovanni has an weight of 71.29 and height of 71.29 and the bmi is:28.56.
+
 Person with id 5063is Laura Valentini born on the 27-02-1951. The last update was on the 06-11-2014 ,Laura has an weight of 108.99 and height of 108.99 and the bmi is:39.55.
+
 Person with id 6791is Anna Pucci born on the 18-09-2015. The last update was on the 13-04-1973 ,Anna has an weight of 52.41 and height of 52.41 and the bmi is:9.25.
+
 Person with id 3873is Nicola Dondo born on the 03-02-1964. The last update was on the 28-10-1966 ,Nicola has an weight of 87.53 and height of 87.53 and the bmi is:12.75.
+
 Person with id 7951is Giulio Simba born on the 10-11-1969. The last update was on the 10-07-2008 ,Giulio has an weight of 55.94 and height of 55.94 and the bmi is:8.81.
+
 Person with id 2883is Valeria Marini born on the 11-08-2011. The last update was on the 10-09-1985 ,Valeria has an weight of 51.82 and height of 51.82 and the bmi is:10.33.
+
 Person with id 8586is Chiara Verno born on the 04-09-1987. The last update was on the 09-01-1952 ,Chiara has an weight of 133.31 and height of 133.31 and the bmi is:23.14.
+
 Person with id 2394is Andrea Pello born on the 09-06-2004. The last update was on the 03-04-2012 ,Andrea has an weight of 76.07 and height of 76.07 and the bmi is:15.16.
 
 Another way to do marshall java objects to XM is using JAXB and generated class with JAXB XJC. This class will produce a people_new_xjc.xml in home folder.
@@ -408,14 +423,23 @@ Another way to do marshall java objects to XM is using JAXB and generated class 
 Output from XML File: 
 
 Person with id 1: Rossi, Maria born 29-01-1909. Has an weight of 107.18 kg, a height of 2.82 , a BMI of 13.48 and the last update was 11-01-1916.
+
 Person with id 2: Cosa, Marco born 30-01-1972. Has an weight of 40.78 kg, a height of 1.94 , a BMI of 10.84 and the last update was 26-01-1969.
+
 Person with id 3: Bianchi, Giovanni born 04-01-1984. Has an weight of 74.54 kg, a height of 2.25 , a BMI of 14.72 and the last update was 09-01-1959.
+
 Person with id 4: Valentini, Laura born 15-01-1977. Has an weight of 69.08 kg, a height of 2.79 , a BMI of 8.87 and the last update was 09-01-1987.
+
 Person with id 5: Pucci, Anna born 17-01-1905. Has an weight of 139.45 kg, a height of 2.83 , a BMI of 17.41 and the last update was 04-01-2007.
+
 Person with id 6: Dondo, Nicola born 13-01-1932. Has an weight of 137.45 kg, a height of 2.45 , a BMI of 22.9 and the last update was 21-01-1920.
+
 Person with id 7: Simba, Giulio born 19-01-1989. Has an weight of 98.43 kg, a height of 2.37 , a BMI of 17.52 and the last update was 12-01-1994.
+
 Person with id 8: Marini, Valeria born 23-01-1970. Has an weight of 117.08 kg, a height of 1.68 , a BMI of 41.48 and the last update was 27-01-1976.
+
 Person with id 9: Verno, Chiara born 11-01-1988. Has an weight of 144.39 kg, a height of 2.84 , a BMI of 17.9 and the last update was 26-01-1905.
+
 Person with id 10: Pello, Andrea born 13-01-1917. Has an weight of 144.49 kg, a height of 1.53 , a BMI of 61.72 and the last update was 20-01-1966.
 
 ## Request 3: Make your application to convert also JSON
@@ -425,9 +449,10 @@ I created 10 people using java and marshall them to JSON. This function will pri
 **Marshalling to JSON using model classes**
 
 ------------------ Marshalling to JSON ----------------
-File peopleNew.json created in the home folder.....
-Output: 
-{
+
+- File peopleNew.json created in the home folder.....
+- Output: 
+- {
   "person" : [ {
     "firstname" : "Maria",
     "lastname" : "Rossi",
