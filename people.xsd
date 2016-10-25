@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!-- definition of root element -->
+	<xsd:element name="people" type="peopleType" />
+
+
+	<!-- definition of complex elements -->
+	<xsd:complexType name="peopleType">
+		<xsd:sequence>
+			<xsd:element name="person" type="personType" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="personType">
+		<xsd:sequence>
+			<xsd:element name="firstname" type="stringType" />
+			<xsd:element name="lastname" type="stringType" />
+			<xsd:element name="birthdate" type="dateType" />
+			<xsd:element name="healthprofile" type="healthprofileType" />
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:long" use="required" />
+	</xsd:complexType>
+
+	<xsd:complexType name="healthprofileType">
+		<xsd:sequence>
+			<xsd:element name="lastupdate" type="dateType" />
+			<xsd:element name="weight" type="doubleType" />
+			<xsd:element name="height" type="doubleType" />
+			<xsd:element name="bmi" type="doubleType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="stringType">
+		<xsd:restriction base="xsd:string" />
+	</xsd:simpleType>
+
+	<xsd:simpleType name="dateType">
+		<xsd:restriction base="xsd:dateTime" />
+	</xsd:simpleType>
+
+	<xsd:simpleType name="doubleType">
+		<xsd:restriction base="xsd:double" />
+	</xsd:simpleType>
+
+</xsd:schema>

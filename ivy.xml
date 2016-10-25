@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- 
+	=============================================================
+    	Introduction to Service Design and Engineering Laboratory
+    	Description: Ivy file for this assignment #1 
+    	Author: raffaella.tran
+	============================================================= 
+-->
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+    <info
+        organisation="assignment-introsde"
+        module="01"
+        status="integration">
+	</info>
+	
+	<dependencies>
+	
+        <dependency org="javax.xml.bind" name="jaxb-api" rev="2.2.11"/>
+        <dependency org="com.sun.xml.bind" name="jaxb-impl" rev="2.2.7"/>
+        <dependency org="com.sun.xml.bind" name="jaxb-xjc" rev="2.2.7"/>
+        
+        <dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.4.2">
+            <artifact name="jackson-core" type="jar"/>
+        </dependency>
+        <dependency org="com.fasterxml.jackson.module" name="jackson-module-jaxb-annotations" rev="2.4.1">
+            <artifact name="jackson-module-jaxb-annotations" type="jar"/>
+        </dependency>
+        <dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.4.2">
+            <artifact name="jackson-databind" type="jar"/>
+        </dependency>
+        <dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.4.2">
+            <artifact name="jackson-annotations" type="jar"/>
+        </dependency>
+        <dependency org="net.sf.dozer" name="dozer" rev="5.5.1"/>
+        <dependency org="joda-time" name="joda-time" rev="2.4"/>
+        <dependency org="org.slf4j" name="slf4j-nop" rev="1.7.7"/>
+        
+    </dependencies>
+	
+</ivy-module>

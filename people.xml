@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+    <person id="0001">
+        <firstname>George R. R.</firstname>
+        <lastname>Martin</lastname>
+        <birthdate>1984-09-20T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>2014-09-20T18:00:00.000+02:00</lastupdate>
+            <weight>100</weight>
+            <height>1.70</height>
+            <bmi>31.14</bmi>
+        </healthprofile>
+    </person>
+    <!-- add more people to the db -->
+    <person id="0002">
+        <firstname>Gino</firstname>
+        <lastname>Bova</lastname>
+        <birthdate>1939-10-20T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>2015-03-27T18:00:00.000+02:00</lastupdate>
+            <weight>70</weight>
+            <height>1.70</height>
+            <bmi>31.14</bmi>
+        </healthprofile>
+    </person>
+	<person id="0003">
+		<firstname>Pallo</firstname>
+		<lastname>Pinco</lastname>
+		<birthdate>1944-09-22T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2014-06-20T18:00:00.000+02:00</lastupdate>
+			<weight>85</weight>
+			<height>1.72</height>
+			<bmi>28.9007571660357</bmi>
+		</healthprofile>
+	</person>
+	<person id="0004">
+		<firstname>Luigi</firstname>
+		<lastname>Doe</lastname>
+		<birthdate>1982-09-29T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2014-01-20T13:00:00.000+02:00</lastupdate>
+			<weight>93</weight>
+			<height>1.76</height>
+			<bmi>22.985397512168742</bmi>
+		</healthprofile>
+	</person>
+	<person id="0005">
+		<firstname>Alessia</firstname>
+		<lastname>Marcuzzi</lastname>
+		<birthdate>2013-01-13T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2016-01-20T18:00:00.000+02:00</lastupdate>
+			<weight>30</weight>
+			<height>1.10</height>
+			<bmi>24.79</bmi>
+		</healthprofile>
+	</person>
+	<person id="0006">
+		<firstname>Anthony</firstname>
+		<lastname>Banderas</lastname>
+		<birthdate>1989-07-13T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2013-03-20T18:00:00.000+02:00</lastupdate>
+			<weight>69</weight>
+			<height>1.75</height>
+			<bmi>28.9007571660357</bmi>
+		</healthprofile>
+	</person>
+	<person id="0007">
+		<firstname>Jonathan</firstname>
+		<lastname>Bianchi</lastname>
+		<birthdate>1990-12-31T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2013-09-10T18:02:00.000+02:00</lastupdate>
+			<weight>81</weight>
+			<height>1.85</height>
+			<bmi>28.9007571660357</bmi>
+		</healthprofile>
+	</person>
+	<person id="0008">
+		<firstname>Claudia</firstname>
+		<lastname>Ghini</lastname>
+		<birthdate>1965-07-15T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2012-09-20T18:00:00.000+02:00</lastupdate>
+			<weight>78</weight>
+			<height>1.69</height>
+			<bmi>23.485397512168742</bmi>
+		</healthprofile>
+	</person>
+	<person id="0009">
+		<firstname>Elena</firstname>
+		<lastname>Stanzial</lastname>
+		<birthdate>1991-12-26T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2015-10-20T18:00:00.000+02:00</lastupdate>
+			<weight>55</weight>
+			<height>1.64</height>
+			<bmi>20.14</bmi>
+		</healthprofile>
+	</person>
+	<person id="0010">
+		<firstname>Mario</firstname>
+		<lastname>Sanchez</lastname>
+		<birthdate>1965-05-20T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2013-09-12T18:00:00.000+02:00</lastupdate>
+			<weight>83</weight>
+			<height>1.71</height>
+			<bmi>28.9007571660357</bmi>
+		</healthprofile>
+	</person>
+	<person id="0011">
+		<firstname>Giulio</firstname>
+		<lastname>Ciccio</lastname>
+		<birthdate>1962-03-26T14:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2014-07-20T18:00:00.000+02:00</lastupdate>
+			<weight>75</weight>
+			<height>1.79</height>
+			<bmi>28.9007571660357</bmi>
+		</healthprofile>
+	</person>
+	<person id="0012">
+		<firstname>Melanie</firstname>
+		<lastname>West</lastname>
+		<birthdate>1998-09-19T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2014-03-05T18:00:00.000+02:00</lastupdate>
+			<weight>82</weight>
+			<height>1.72</height>
+			<bmi>22.98534343342168742</bmi>
+		</healthprofile>
+	</person>
+	<person id="0013">
+		<firstname>Enrique</firstname>
+		<lastname>Iglesias</lastname>
+		<birthdate>1972-03-21T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2004-10-01T18:00:00.000+02:00</lastupdate>
+			<weight>68</weight>
+			<height>1.79</height>
+			<bmi>32.20</bmi>
+		</healthprofile>
+	</person>
+	<person id="0014">
+		<firstname>Stefano</firstname>
+		<lastname>Summa</lastname>
+		<birthdate>1991-10-23T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2013-09-25T18:00:00.000+02:00</lastupdate>
+			<weight>60</weight>
+			<height>1.73</height>
+			<bmi>29.9007571660357</bmi>
+		</healthprofile>
+	</person>
+	<person id="0015">
+		<firstname>Nicola</firstname>
+		<lastname>Righe</lastname>
+		<birthdate>1989-09-21T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2014-11-10T18:00:00.000+02:00</lastupdate>
+			<weight>82</weight>
+			<height>1.58</height>
+			<bmi>34.9007571660357</bmi>
+		</healthprofile>
+	</person>
+	<person id="0016">
+		<firstname>Maric</firstname>
+		<lastname>Gianpicca</lastname>
+		<birthdate>1991-09-22T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2013-12-04T18:00:40.000+02:00</lastupdate>
+			<weight>70</weight>
+			<height>1.72</height>
+			<bmi>22.985397512168742</bmi>
+		</healthprofile>
+	</person>
+	<person id="0017">
+		<firstname>Silvio</firstname>
+		<lastname>Pugliese</lastname>
+		<birthdate>1974-11-30T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2014-10-23T18:00:00.000+02:00</lastupdate>
+			<weight>85</weight>
+			<height>1.78</height>
+			<bmi>31.14</bmi>
+		</healthprofile>
+	</person>
+	<person id="0018">
+		<firstname>Andrea</firstname>
+		<lastname>Sarpa</lastname>
+		<birthdate>1986-02-30T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2013-08-11T18:00:00.000+02:00</lastupdate>
+			<weight>85</weight>
+			<height>1.89</height>
+			<bmi>24.9007571660357</bmi>
+		</healthprofile>
+	</person>
+	<person id="0019">
+		<firstname>Valerio</firstname>
+		<lastname>Ventura</lastname>
+		<birthdate>1975-01-04T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2014-11-07T18:00:00.000+02:00</lastupdate>
+			<weight>82</weight>
+			<height>1.29</height>
+			<bmi>28.9007572351</bmi>
+		</healthprofile>
+	</person>
+	<person id="0020">
+		<firstname>Anna</firstname>
+		<lastname>Camacho</lastname>
+		<birthdate>1987-03-21T18:00:00.000+02:00</birthdate>
+		<healthprofile>
+			<lastupdate>2014-09-10T18:00:00.000+02:00</lastupdate>
+			<weight>103</weight>
+			<height>1.79</height>
+			<bmi>32.985397512168742</bmi>
+		</healthprofile>
+	</person> 
+</people>
